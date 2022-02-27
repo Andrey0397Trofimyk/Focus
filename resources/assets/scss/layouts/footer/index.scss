@@ -1,0 +1,89 @@
+@import 'components/advertising.scss';
+
+.footer {
+    &__logo {
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @include widthGap(2, 10px, 15px);
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    &__link {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    &__inner {
+        font-size: 1.4rem;
+        p {
+            display: block;
+            margin-bottom: 10px;
+        }
+        a, p {  
+            color: #929292;
+        }
+        a {
+            text-decoration: solid underline #ed3237 1px;
+        }
+    }
+    &__wrapper:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__info-text {
+        display: block;
+        font-size: 1.6rem;
+        &--link {
+            margin-top: 5px;
+        }
+    }
+}
+
+@include min(640px) {
+    .footer {
+        &__list {
+            @include widthGap(3, 10px, 20px);
+        }
+    }
+}
+
+@include min(992px) {
+    .footer {
+        &__wrapper {
+            &:not(&--first) {
+                display: flex;
+                @include widthGap(2, 20px);
+            }
+        }
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            @include widthGap(2, 20px);
+            padding-bottom: 25px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        &__list {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        &__inner {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@include min(1200px) {
+    .footer {
+        &__list {
+            @include widthGap(4, 10px, 25px);
+        }
+    }
+}

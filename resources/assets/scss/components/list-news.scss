@@ -1,0 +1,119 @@
+@import '../components/card/card-first.scss';
+@import '../components/card/card-second.scss';
+@import '../components/card/card-third.scss';
+@import '../components/card/card-quote-first.scss';
+@import '../components/card/card-quote-second.scss';
+@import '../components/card/card-blurb.scss';
+@import '../components/link-category.scss';
+
+.c-list-news {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;    
+        row-gap: 20px;
+        margin-bottom: 20px;
+    }
+    &__item {
+        display: block;
+        width: 100%;
+        &--special-block {
+            width: 100%;
+            order: -1;
+            time {
+                display: none;
+            }
+            .c-list-news__card {
+                span {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    &__card {
+        height: 100%;
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+}
+
+@include min(480px) {
+    .c-list-news {
+        &__list {
+            @include widthGap(2, 10px, 20px);
+        }
+        &__item--special-block {
+            width: 100%;
+            figure {
+                padding-bottom: 50%
+            }
+        }
+    }
+}
+
+@include min(576px) {
+    .c-list-news {
+        &__list {
+            @include widthGap(3, 15px, 25px);
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__item--special-block {
+            width: 100%;
+            figure {
+                padding-bottom: 40%
+            }
+            .c-list-news__card {
+                span {
+                    max-width: 400px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@include min(992px) {
+    .c-list-news {
+        &__list {
+            @include widthGap(4, 20px, 30px);
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__item--special-block {
+            width: calc(100% / 2 - ((20px * (3 - 1)) / 4));
+            order: 0;
+            figure {
+                height: 100%;
+                padding-bottom: 0
+            }
+            .c-card-quote-second {
+                figure {
+                    height: 90%;
+                    margin-top: auto;
+                }
+            }
+            .c-list-news__card {
+                span {
+                    margin-bottom: 75px;
+                }
+            }
+        }
+    }
+}
+
+@include min(1300px) {
+    .c-list-news {
+        &__item--special-block {
+            .c-card-quote-second {
+                figure {
+                    height: 100%;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

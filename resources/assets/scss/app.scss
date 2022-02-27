@@ -1,6 +1,66 @@
-@import 'base/reset.scss';
 @import 'base/mix.scss';
+@import 'base/reset.scss';
 @import 'base/fonts.scss';
 @import 'base/grid.scss';
 
+@import '~swiper/scss';
+@import '~swiper/scss/thumbs';
+@import '~swiper/scss/autoplay';
+@import '~swiper/scss/navigation';
+
 @import 'layouts/header/index.scss';
+@import 'layouts/footer/index.scss';
+
+@import 'components/logo.scss';
+@import 'components/list-news.scss';
+@import 'components/time.scss';
+@import 'components/short-news.scss';
+@import 'components/blurb/blurb-first.scss';
+@import 'components/blurb/blurb-second.scss';
+@import 'components/sliders/basic-slider.scss';
+@import 'components/sliders/news-slider.scss';
+@import 'components/sliders/rating.scss';
+@import 'components/sliders/now-popular.scss';
+
+@import 'ui/slider-arrow.scss';
+@import 'ui/title.scss';
+@import 'ui/button.scss';
+
+.main {
+    &__basic-slider {
+        margin-bottom: 30px;
+    }
+    &__list-news-first {
+        margin-bottom: 20px;
+    }
+    &__short-news {
+        margin-bottom: 30px;
+    }
+    &__rating {
+        margin-bottom: 30px;
+    }
+    &__now-popular {
+        margin-bottom: 30px;
+    }
+}
+
+.fixing {
+    overflow: hidden;
+}
+
+@include min(992px) {
+    .main {
+        &__basic-slider {
+            margin-bottom: 40px;
+        }
+        &__list-news-first {
+            margin-bottom: 45px;
+        }
+        &__short-news {
+            margin-bottom: 50px;
+        }
+        &__now-popular {
+            margin-bottom: 50px;
+        }
+    }
+}

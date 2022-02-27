@@ -1,0 +1,67 @@
+.c-now-popular {
+    padding: 20px 0;
+    background-color: #F4F4F4;
+    &__container {
+        position: relative;
+    }
+    &__card {
+        figure {
+            height: auto;
+            padding-top: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+}
+
+@include min(480px) {
+    .c-now-popular {
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@include min(700px) {
+    .c-now-popular {
+        &__card {
+            figure {
+                padding-top: 140%;
+            }
+        }
+    }
+}
+
+@include min(992px) {
+    .c-now-popular {
+        padding: 30px 0;
+        &__card {
+            figure {
+                padding-top: 100%;
+            }
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include min(1200px) {
+    .c-now-popular {
+        &__card {
+            span {
+                font-size: rem(20);
+            }
+        }
+    }
+}
+
+@include min(1300px) {
+    .c-now-popular {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}

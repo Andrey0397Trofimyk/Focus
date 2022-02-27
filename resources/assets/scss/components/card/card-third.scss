@@ -1,0 +1,101 @@
+.c-card-third {
+    position: relative;
+    width: 100%;
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px;
+        z-index: 2;
+    }
+    &__info {
+        display: block;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__link-category {
+        position: relative;
+        margin-bottom: auto;
+        z-index: 2;
+    }
+    &__special-text {
+        display: block;
+        font-size: rem(70);
+        font-weight: 700;
+        color: #fff;
+    }
+    &__text {
+        font-size: rem(16);
+        line-height: 1.5;
+        color: #fff;
+    }
+    &__figure {
+        position: relative;
+        padding-top: 100%;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;    
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.41) -14.04%, #000000 56.64%);
+            z-index: 2;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        object-position: top;
+    }
+}
+
+@include min(480px) {
+    .c-card-third {
+        &__figure {
+            height: 100%;
+            padding-top: 0;
+        }
+    }
+}
+
+@include min(992px) {
+    .c-card-third {
+        &__special-text {
+            font-size: rem(90);
+        }
+        &__text {
+            font-size: rem(18);
+        }
+        &__link-category {
+            top: 10px;
+        }
+    }
+}
+
+@include min(1200px) {
+    .c-card-third {
+        &__text {
+            font-size: rem(20);
+        }
+        &__special-text {
+            font-size: rem(100);
+        }
+        &__link-category {
+            top: 15px;
+        }
+    }
+}

@@ -4,18 +4,10 @@
         class="c-burger__button js--toggle-menu" data-content="c-burger-menu"
         >
         <span class="c-burger__line"></span>
-        <span class="c-burger__line"></span>
-        <span class="c-burger__line"></span>
     </button>
-    <a href="#" class="c-burger__logo">
-        <img 
-            src="/grafical/images/logo.png" 
-            alt="logo" 
-            width="120px" 
-            height="30px" 
-            decoding="async"
-            class="c-burger__logo-img">
-    </a>
+    @include('components.logo', [
+        'class' => 'c-burger__logo' 
+    ])
     <div class="c-burger__menu c-burger-menu">
         @php
             $menuList = [    
@@ -31,7 +23,7 @@
                 'Авто',
             ];
             @endphp
-        <div class="c-burger-menu__inner c-menu-list">
+        <div class="c-burger-menu__inner c-menu-list c-menu-list--first">
             <span class="c-menu-list__subtitle">
                 Материалы
             </span>
@@ -46,7 +38,7 @@
             </ul>
         </div>
         <div class="c-burger-menu__submenu">
-            <div class="c-burger-menu__inner c-menu-list">
+            <div class="c-burger-menu__inner c-menu-list c-menu-list--second">
                 <span class="c-menu-list__subtitle">
                     Разделы
                 </span>
@@ -61,14 +53,21 @@
                 </ul>
             </div>
             <a href="#" class="c-burger-menu__advertising">
-                <picture>
-                    <img src="" alt="">
+                <picture class="c-burger-menu__picture">
+                    <img 
+                        src="grafical/images/blurb-4.png" 
+                        alt="advertising"
+                        width="85"
+                        height="110"
+                        decoding="async"
+                        class="c-burger-menu__img">
                 </picture>
-                <span>
+                <span class="c-burger-menu__text">
                     Гарантировано получите скидку
                     <span>-10%</span>
                 </span>
             </a>
         </div>
     </div>
+    <div class="c-burger__background"></div>
 </div>

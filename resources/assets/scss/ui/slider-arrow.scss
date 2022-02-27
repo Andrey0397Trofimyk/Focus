@@ -1,0 +1,110 @@
+.ui-slider-arrow {
+    position: absolute;
+    top: 60%;
+    display: none;
+    width: 20px;
+    height: 30px;
+    transform: translateY(-60%);
+    z-index: 2;
+    cursor: pointer;
+    &--next {
+        right: -10px;
+        transform: translateY(-60%) scale(-1);
+    }
+    &--prev {
+        left: -10px;
+    }
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        border-radius: 10px;
+        transform-origin: center left;
+    }
+    &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:after {
+        top: 55%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &--inside {
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        &.ui-slider-arrow__arrow {
+            &--next {
+                right: 10px;
+                transform: translateY(-50%) scale(-1);
+            }
+            &--prev {
+                left: 10px;
+            }
+        }
+        &:before, &:after {
+            background-color: #fff;
+        }
+    }
+}
+
+@include min(768px) {
+    .ui-slider-arrow {
+        display: block;
+    }
+}
+
+@include min(992px) {
+    .ui-slider-arrow {
+        width: 25px;
+        height: 37px;
+        &--next {
+            right: -20px;
+        }
+        &--prev {
+            left: -20px;
+        }
+        &:before, &:after {
+            transition-duration: .3s;
+        }
+        &:hover {
+            &:before, &:after {
+                background-color: #ED3237;
+            }
+        }
+        &--inside {
+            &.ui-slider-arrow__arrow {
+                &--next {
+                    right: 30px;
+                }
+                &--prev {
+                    left: 30px;
+                }
+            }
+        }
+    }
+}
+
+@include min(1200px) {
+    .ui-slider-arrow {
+        &--next {
+            right: -30px;
+        }
+        &--prev {
+            left: -30px;
+        }
+        &--inside {
+            &.ui-slider-arrow__arrow {
+                &--next {
+                    right: 40px;
+                }
+                &--prev {
+                    left: 37px;
+                }
+            }
+        }
+    }
+}

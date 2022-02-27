@@ -1,0 +1,119 @@
+.c-card-quote-first {
+    position: relative;
+    background-color: #000;
+    &__figure {
+        position: relative;
+        padding-bottom: 100%;
+        background-color: #000;
+        &--no-img {
+            img {
+                display: none;
+            }
+        }
+    }
+    &__img, &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+    &__category, &__text, &__title {
+        color: #fff;
+    }
+    &__category {
+        font-size: rem(12);
+        font-weight: 700;
+    }
+    &__text {
+        font-size: rem(16);
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+    }
+    &__symbol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__icon {
+        width: 20px;
+        height: 15px;
+        margin-bottom: 10px;
+        fill: #fff;
+    }
+}
+
+.c-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__figure {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__text {
+        font-size: rem(12);
+        font-weight: 500;
+        color: #fff;
+    }
+}
+
+@include min(576px) {
+    .c-card-quote-first {
+        height: 100%;
+    }
+}
+
+@include min(992px) {
+    .c-card-quote-first {
+        &__category {
+            font-size: rem(14);
+        }
+        &__text {
+            font-size: rem(18);
+        }
+    }
+    .c-author {
+        &__figure {
+            width: 30px;
+            height: 30px;
+        }
+        &__text {
+            font-size: rem(14);
+        }
+    }
+}
+
+@include min(1200px) {
+    .c-card-quote-first {
+        &__text {
+            font-size: rem(20);
+        }
+        &__icon {
+            width: 30px;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}

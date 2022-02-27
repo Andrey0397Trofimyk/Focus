@@ -8,3 +8,27 @@
         max-width: none;
     }
 }
+
+@include min(768px) {
+    .container {
+        max-width: 730px;
+        &--fluid {
+            max-width: none;
+        }
+    }
+}
+
+@include min(992px) {
+    .container {
+        max-width: 930px;
+        &--fluid {
+            max-width: none;
+        }
+    }
+}
+
+@include min(1300px) {
+    .container {
+        max-width: 1270px;
+    }
+}

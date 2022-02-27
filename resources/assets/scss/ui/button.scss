@@ -1,0 +1,21 @@
+.c-button {
+    height: 48px;
+    max-width: 209px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: rem(20);
+    font-weight: 500;
+}
+
+@include min(992px) {
+    .c-button {
+        max-width: 180px;
+    }
+}
+
+@include min(1300px) {
+    .c-button {
+        max-width: 209px;
+    }
+}

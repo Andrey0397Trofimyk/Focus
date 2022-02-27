@@ -3,8 +3,80 @@
         padding: 5px;
     }
     &__icon {
-        fill: red;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.c-search-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: .3s;
+    background-color: rgba(244,244,245,.97);
+    z-index: 11;
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    &__logo {
+        margin: 18px auto 0 auto;
+    }
+    &__remove {
+        position: absolute;
+        top: 20px;
+        right: 12px;
+        width: 13px;
+        padding: 13px;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 2px;
+            background-color: #a1a1a1;
+        }
+        &:before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &:after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+    &__form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 30px);
+        padding: 23px 25px;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+        background-color: #fff;
+    }
+    &__input {
+        width: calc(100% - 35px);
+        margin-right: 10px;
+        font-size: 2.2rem;
+        font-weight: 500;
+        &::placeholder {
+            color: #939393;
+        }
+    }
+    &__button {
+        width: 25px;
+        height: 25px;
+    }
+    &__icon {
+        width: 100%;
+        height: 100%;
+        fill: #ed3237;
     }
 }

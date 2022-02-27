@@ -1,0 +1,12 @@
+.c-logo {
+    display: block;
+    width: 126px;
+    height: 28px;
+    &--footer {
+        width: 184px;
+        height: 41px;
+    }
+    &__img {
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,120 @@
+.c-card-second {
+    position: relative;
+    width: 100%;
+    &--dark {
+        .c-card-second {
+            &__figure {
+                background-color: #fff;
+                &:before {
+                    display: none;
+                }
+            }
+            &__text {
+                color: #000;
+            }
+        }
+    }
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px 0 15px;
+        z-index: 2;
+    }
+    &__info {
+        display: block;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__link-category {
+        position: relative;
+        margin-bottom: auto;
+        z-index: 2;
+    }
+    &__text {
+        font-size: rem(16);
+        line-height: 1.5;
+        color: #fff;
+    }
+    &__figure {
+        position: relative;
+        padding-bottom: 100%;
+        background-color: #000;
+        &--no-img {
+            .c-card-second {
+                &__img {
+                    display: none;
+                }
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+            z-index: 2;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+@include min(480px) {
+    .c-card-second {
+        &__figure {
+            height: 100%;
+            padding-bottom: 0;
+        }
+    }
+}
+
+@include min(576px) {
+    .c-card-second {
+        &__text {
+            font-size: rem(18);
+        }
+    }
+}
+
+@include min(992px) {
+    .c-card-second {
+        &__text {
+            font-size: rem(20);
+        }
+        &__time {
+            font-size: rem(14);
+        }
+        &__link-category {
+            top: 10px;
+        }
+    }
+}
+
+@include min(1200px) {
+    .c-card-second {
+        &__text {
+            font-size: rem(22);
+        }
+        &__link-category {
+            top: 15px;
+        }
+    }
+}

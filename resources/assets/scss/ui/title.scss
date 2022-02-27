@@ -1,0 +1,23 @@
+.ui-title {
+    font-size: rem(20);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@include min(992px) {
+    .ui-title {
+        font-size: rem(30);
+    }
+}
+
+@include min(1200px) {
+    .ui-title {
+        font-size: rem(34);
+    }
+}
+
+@include min(1300px) {
+    .ui-title {
+        font-size: rem(40);
+    }
+}

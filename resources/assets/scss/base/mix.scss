@@ -1,4 +1,42 @@
+$basicSize: 10;
 
-// @mixin min($size) {
-//     @media screen and (min-width: #{$size})
-// }
+@mixin widthGap($count, $column-gap, $row-gap : $column-gap){
+    column-gap: #{$column-gap};
+    row-gap: #{$row-gap};
+    &>*{
+        width: calc(100% / #{$count} - ((#{$column-gap} * (#{$count} - 1)) / #{$count}));
+    }
+}
+
+@mixin min($width) {
+    @media screen and (min-width: #{$width}) {
+        @content;
+    }
+}
+
+@mixin max($width) {
+    @media screen and (max-width: #{$width}) {
+        @content;
+    }
+}
+
+@mixin text-control($row: 5) {
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+@function rem($value) {
+
+    @return calc($value / $basicSize) + rem;
+}
+
+@mixin scrollbar ($color-thumb: #8f8f8f, $color-track: #fff) {
+    scrollbar-color: #{$color-thumb} #{$color-track};
+    scrollbar-width: thin;
+    &::-webkit-scrollbar { width: 2px; height: 5px; }
+    &::-webkit-scrollbar-thumb { background-color: #{$color-thumb}; border-radius: 2px; }
+    &::-webkit-scrollbar-button { height: 0; }
+    &::-webkit-scrollbar-track-piece { background-color: #{$color-track}; }
+}

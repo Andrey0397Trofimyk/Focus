@@ -1,0 +1,18 @@
+.c-time {
+    display: block;
+    margin-bottom: 10px;
+    font-size: rem(12);
+    color: #000;
+    opacity: 0.5;
+    &--white {
+        color: #fff;
+    }
+}
+
+@include min(992px) {
+    .c-card-second {
+        &__time {
+            font-size: rem(14);
+        }
+    }
+}

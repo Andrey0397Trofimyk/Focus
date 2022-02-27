@@ -1,0 +1,220 @@
+.c-basic-slider {
+    &__box {
+        position: relative;
+    }
+}
+
+.c-thumbs-slider {
+    margin-bottom: 15px;
+    &__slide {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        cursor: pointer;
+        &.swiper-slide-thumb-active {
+            &:before {
+                animation: 5.3s linear 0s infinite normal animationLine;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: #ED3237;
+            z-index: 4;
+        }
+    }
+    &__figure {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(76.81deg, #000000 14.51%, rgba(0, 0, 0, 0) 74.23%);
+            z-index: 2;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: 0 20%;
+        z-index: 1;
+    }
+    &__title {
+        position: relative;
+        width: calc(100% - 20px);
+        color: #fff;
+        font-size: rem(14);
+        font-weight: 700;
+        text-align: center;
+        @include text-control(3);
+        z-index: 3;
+    }
+}
+
+@keyframes animationLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+  }
+
+.c-basic-slider {
+    &__figure {
+        position: relative;
+        padding-bottom: 130%;
+        background-color: #000;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 18%, rgba(0, 0, 0, 0.4) 27%, #000000 42.64%);
+            z-index: 2;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        object-position: top;
+    }
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px 15px 20px 15px;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+    &__link-category {
+        position: relative;
+        top: 10px;
+        z-index: 2;
+    }
+    &__link {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title, &__text {
+        display: block;
+        color: #fff;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-size: rem(24);
+        @include text-control(5);
+    }
+    &__text {
+        font-size: rem(16);
+        @include text-control(8);
+    }
+}
+
+@include min(380px) {
+    .c-basic-slider {
+        &__figure {
+            padding-bottom: 100%;
+        }
+    } 
+}
+
+@include min(480px) {
+    .c-basic-slider {
+        &__figure {
+            padding-bottom: 78%;
+            &:before {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 32%, rgba(0, 0, 0, 0.4) 41%, #000000 70.64%);
+            }
+        }
+        &__title {
+            margin-bottom: 20px;
+            font-size: rem(30);
+        }
+    }
+}
+
+@include min(768px) {
+    .c-basic-slider {
+        &__title {
+            font-size: rem(32);
+        }
+    }
+}
+
+@include min(992px) {
+    .c-basic-slider {
+        &__figure {
+            padding-bottom: 52%;
+            &:before {
+                background: linear-gradient(76.81deg, #000000 14.51%, rgba(0, 0, 0, 0) 74.23%);
+            }
+        }
+        &__img {
+            object-fit: cover;
+        }
+        &__link-category {
+            margin-bottom: 20px;
+        }
+        &__inner {
+            justify-content: flex-start;
+        }
+        &__title {
+            max-width: 400px;
+            margin-bottom: 30px;
+            font-size: rem(34);
+        }
+        &__text {
+            max-width: 300px;
+            font-size: rem(18);
+        }
+    }
+}
+
+@include min(1200px) {
+    .c-basic-slider {
+        &__inner {
+            padding: 25px 15px;
+        }
+        &__link-category {
+            margin-bottom: 25px;
+        }
+        &__figure {
+            height: 466px;
+            padding-bottom: 0;
+        }
+        &__title {
+            max-width: 600px;
+            font-size: rem(36);
+        }
+        &__text {
+            max-width: 530px;
+            font-size: rem(20);
+        }
+    }
+}
