@@ -89,11 +89,11 @@ if(mix.inProduction()) {
     
     mix.sass('resources/assets/scss/critical.scss', 'public/css')
     .sass('resources/assets/scss/app.scss', 'public/css')
-
-    let fileCss = fs.readFileSync('public/css/critical.css', 'utf8');
-
-    fs.writeFileSync(pathCriticalBlade, `<style>${fileCss}</style>`)
-
+    .then(el => {
+        let fileCss = fs.readFileSync('public/css/critical.css', 'utf8');
+        
+        fs.writeFileSync(pathCriticalBlade, `<style>${fileCss}</style>`)
+    })
 } else {
 
     mix.sass('resources/assets/scss/critical.scss', 'public/css/app.css')
