@@ -1,5 +1,5 @@
-<button 
-    type="button" 
+<a 
+    href="#"
     class="{{ $class ?? '' }} c-button">
     Подписаться
-</button>
+</a>

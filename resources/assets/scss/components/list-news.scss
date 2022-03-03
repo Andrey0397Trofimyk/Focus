@@ -1,10 +1,13 @@
-@import '../components/card/card-first.scss';
-@import '../components/card/card-second.scss';
-@import '../components/card/card-third.scss';
-@import '../components/card/card-quote-first.scss';
-@import '../components/card/card-quote-second.scss';
-@import '../components/card/card-blurb.scss';
-@import '../components/link-category.scss';
+@import '@components/card/card-first.scss';
+@import '@components/card/card-second.scss';
+@import '@components/card/card-third.scss';
+@import '@components/card/card-fourth.scss';
+@import '@components/card/card-fifth.scss';
+@import '@components/card/card-quote-first.scss';
+@import '@components/card/card-quote-second.scss';
+@import '@components/card/card-blurb.scss';
+@import '@components/link-category.scss';
+@import '@ui/card-content.scss';
 
 .c-list-news {
     &__list {
@@ -24,7 +27,6 @@
             }
             .c-list-news__card {
                 span {
-                    display: block;
                     margin-bottom: 20px;
                 }
             }
@@ -54,9 +56,6 @@
 
 @include min(576px) {
     .c-list-news {
-        &__list {
-            @include widthGap(3, 15px, 25px);
-        }
         &__title {
             margin-bottom: 20px;
         }

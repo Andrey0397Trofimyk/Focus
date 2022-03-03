@@ -1,0 +1,60 @@
+.c-card-fourth {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &__figure {
+        position: relative;
+        padding-bottom: 45.5%;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__link {
+        &-img {
+            display: block;
+        }
+        &-category {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
+    }
+}
+
+@include min(480px) {
+    .c-card-fourth {
+        &__figure {
+            padding-bottom: 55%;
+        }
+    }
+}
+
+@include min(768px) {
+    .c-card-fourth {
+        &__figure {
+            padding-bottom: 45%;
+        }
+    }
+}
+
+@include min(992px) {
+    .c-card-fourth {
+        &__figure {
+            padding-bottom: 60%;
+        }
+    }
+}
+
+@include min(1200px) {
+    .c-card-fourth {
+        &__figure {
+            padding-bottom: 50%;
+        }
+    }
+}

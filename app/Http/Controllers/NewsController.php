@@ -11,19 +11,19 @@ class NewsController extends Controller
         $newsListFirst = [
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Технологии и наука',
                 'text' => 'Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье',
             ],
             [
                 'type-card' => 'card-third',
-                'img' => '/grafical/images/new-2.png',
+                'img' => 'new-2.webp',
                 'category' => 'рейтинг',
                 'text' => 'Из песни слов не выкинешь. Рейтинг Фокуса: 
                 самые успешные звезды шоу-бизнеса',
@@ -31,31 +31,31 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Технологии и наука',
                 'text' => 'Дубы и сосны. В соцсетях обсуждают сексистский скандал в "Слуге народа"',
             ],
             [
                 'type-card' => 'card-second',
-                'img' => '/grafical/images/new-3.png',
+                'img' => 'new-3.webp',
                 'category' => 'рейтинг',
                 'text' => 'Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-4.png',
-                'category' => 'Технологии и наука',
+                'type-card' => 'card-fourth',
+                'img' => 'new-4.webp',
+                'category' => 'политика',
                 'text' => 'Кабмин назначил главой МОН Сергея Шкарлета в обход Рады',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
-                'category' => 'Технологии и наука',
-                'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
+                'type-card' => 'card-fourth',
+                'img' => 'new-4.webp',
+                'category' => 'политика',
+                'text' => 'Кабмин назначил главой МОН Сергея Шкарлета в обход Рады',
             ],
             [
                 'type-card' => 'card-second',
-                'img' => '/grafical/images/new-3.png',
+                'img' => 'new-3.webp',
                 'category' => 'рейтинг',
                 'text' => 'Выход в люди. Как Шарий диктует информационную повестку дня в Украине',
             ]
@@ -63,62 +63,62 @@ class NewsController extends Controller
         $newsListSecond = [
             [
                 'type-card' => 'card-quote-second',
-                'img' => '/grafical/images/quote-1.png',
+                'img' => 'quote-1.webp',
                 'category' => 'Технологии и наука',
                 'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
                 'special-block' => true
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Технологии и наука',
                 'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
-                'category' => 'Технологии и наука',
-                'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
+                'type-card' => 'card-quote-first',
+                'category' => 'Мнение',
+                'text' => '“Государство или смерть. Какой кризис станет для Украины последним”',
+                'author-img' => 'author-1.webp',
+                'author' => 'Михаил Багинский'
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'type-card' => 'card-fourth',
+                'img' => 'new-4.webp',
                 'category' => 'Технологии и наука',
-                'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
+                'text' => 'Новая нефть. Как ученые ищут редкие элементы на дне океана, в космосе и мусоре',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'type-card' => 'card-fifth',
                 'category' => 'Технологии и наука',
                 'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
             ],
             [
                 'type-card' => 'card-blurb',
-                'img' => '/grafical/images/blurb-2.png'
+                'img' => 'blurb-6.webp'
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
-                'category' => 'Технологии и наука',
-                'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
+                'type-card' => 'card-fourth',
+                'img' => 'new-4.webp',
+                'category' => 'Культура',
+                'text' => 'Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе',
             ],
         ];
         $newsListThird = [
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Небоскребы советских времен. Три маршрута к памятникам советского модернизма в Киеве',
             ],
             [
                 'type-card' => 'card-third',
-                'img' => '/grafical/images/new-2.png',
+                'img' => 'new-2.webp',
                 'category' => 'рейтинг',
                 'text' => 'Из песни слов не выкинешь. Рейтинг Фокуса: 
                 самые успешные звезды шоу-бизнеса',
@@ -126,7 +126,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Как закалилась сталь. Музей Островского в Шепетовке — памятник архитектуры, а не идеологии',
             ],
@@ -134,26 +134,26 @@ class NewsController extends Controller
         $newsListFourth = [
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
             [
                 'type-card' => 'card-second',
-                'img' => '/grafical/images/new-3.png',
+                'img' => 'new-10.webp',
                 'category' => 'фото дня',
                 'text' => 'Бизнес и немного удовольствия: Grand Hotel Lviv Luxury & SPA',
                 'special-block' => true
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
@@ -161,76 +161,73 @@ class NewsController extends Controller
                 'type-card' => 'card-quote-first',
                 'category' => 'Мнение',
                 'text' => '“Государство или смерть. Какой кризис станет для Украины последним”',
-                'author-img' => '/grafical/images/author-1.png',
+                'author-img' => 'author-1.webp',
                 'author' => 'Михаил Багинский'
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
             [
                 'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
         ];
         $newsListFifth = [
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
+                'type-card' => 'card-fourth',
+                'img' => 'new-1.webp',
                 'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'text' => 'Финал Кубка Украины по футболу перенесут из Львова в Харьков, – СМИ',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
-                'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'type-card' => 'card-fifth',
+                'category' => 'Коронавирус в Украине',
+                'text' => 'Коронавирус перевел всех в осадное положение. Пока концертные залы пусты, выступления проходят в режиме онлайн или не проходят вообще.',
+                'time' => '14 июня 2020 о 16:51'
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-3.png',
-                'category' => 'фото дня',
-                'text' => 'Бизнес и немного удовольствия: Grand Hotel Lviv Luxury & SPA',
+                'type-card' => 'card-fourth',
+                'img' => 'new-3.webp',
+                'category' => 'Культура',
+                'text' => 'Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе',
             ],
             [
                 'type-card' => 'card-blurb',
-                'img' => '/grafical/images/blurb-12.png',
-                'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'img' => 'blurb-12.webp',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-3.png',
-                'category' => 'фото дня',
-                'text' => 'Бизнес и немного удовольствия: Grand Hotel Lviv Luxury & SPA',
+                'type-card' => 'card-fourth',
+                'img' => 'new-3.webp',
+                'category' => 'авто',
+                'text' => 'Вдохновленные ностальгией. 3 лимитированные серии автомобилей, посвященные славному прошлому',
             ],
             [
                 'type-card' => 'card-blurb',
-                'img' => '/grafical/images/blurb-13.png',
-                'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'img' => 'blurb-13.webp',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
-                'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'type-card' => 'card-second',
+                'img' => 'new-1.webp',
+                'category' => 'Длинный фокус',
+                'text' => 'КОГДА ТЫ ДОМА: как «умный дом» LG приходит на выручку во времена турбулентности',
             ],
             [
-                'type-card' => 'card-first',
-                'img' => '/grafical/images/new-1.png',
-                'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'type-card' => 'card-fifth',
+                'img' => 'new-1.webp',
+                'category' => 'Архивариус',
+                'title' => 'Мосты всей жизни. В жизни Евгения Патона не было случайностей',
+                'text' => 'Его называли человеком из будущего, гениальные идеи которого по сей день используются при изготовлении сверхпрочных сплавов для мостов, железных дорог и даже космических станций. ',
             ],
         ];
         $newsRating = [
             [
                 'type-card' => 'card-fourth',
-                'img' => '/grafical/images/blurb-10.png',
+                'img' => 'blurb-10.webp',
                 'special-text' => '100',
                 'category' => 'Рейтинг',
                 'subtitle' => 'Рейтинг 2019',
@@ -238,7 +235,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-fourth',
-                'img' => '/grafical/images/blurb-11.png',
+                'img' => 'blurb-11.webp',
                 'category' => 'Рейтинг',
                 'text' => 'Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса',
                 'dark-mode' => true
@@ -253,7 +250,7 @@ class NewsController extends Controller
         ];
         $newsPopular = [
             [
-                'img' => '/grafical/images/new-8.png',
+                'img' => 'new-8.webp',
                 'category' => 'протесты в США',
                 'text' => 'Жертвы собственной пропаганды. Как либеральные могут проиграть холодную войну',
             ],
@@ -267,12 +264,12 @@ class NewsController extends Controller
                 'dark-mode' => true
             ],
             [
-                'img' => '/grafical/images/new-9.png',
+                'img' => 'new-9.webp',
                 'category' => 'мир',
                 'text' => 'Дресс-код постапокалипсиса. Как коронавирус и карантин навсегда изменили стиль',
             ],
             [
-                'img' => '/grafical/images/new-9.png',
+                'img' => 'new-9.webp',
                 'category' => 'мир',
                 'text' => 'Дресс-код постапокалипсиса. Как коронавирус и карантин навсегда изменили стиль',
             ]

@@ -9,11 +9,17 @@
                         <figure 
                             class="c-blurb-first__figure @if($i % 2 == 0) c-blurb-first__figure--special @endif">
                             <img 
-                                src="grafical/images/blurb-{{ $i }}.png" 
+                                src="grafical/icons/no-img.svg"
+                                data-srcset="
+                                    grafical/images/resize-50/blurb-{{ $i }}.webp 1x,
+                                    grafical/images/resize-75/blurb-{{ $i }}.webp 2x,
+                                    grafical/images/resize-90/blurb-{{ $i }}.webp 3x"
                                 alt="blurb"
-                                class="c-blurb-first__img"
                                 width="85"
-                                height="85">
+                                height="85"
+                                decoding="async"
+                                class="c-blurb-first__img lazyload"
+                                >
                         </figure>
                     </a>
                 </li>

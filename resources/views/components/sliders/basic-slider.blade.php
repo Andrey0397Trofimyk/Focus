@@ -1,65 +1,67 @@
 <div class="{{ $class ?? '' }}  c-basic-slider">
 	<div class="c-basic-slider__container container">
-
 		<div class="swiper js--thumbs-basic-slider c-basic-slider__thumbs c-thumbs-slider">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide c-thumbs-slider__slide">
-						<figure class="c-thumbs-slider__figure">
-							<img 
-								src="grafical/images/new-5.png" 
-								alt=""
-								class="c-thumbs-slider__img">
-						</figure>
-						<span class="c-thumbs-slider__title">
-							Леди в законе. Особый статус для жены президетна
-						</span>
-					</div>
-					<div class="swiper-slide c-thumbs-slider__slide">
-						<figure class="c-thumbs-slider__figure">
-							<img 
-								src="grafical/images/new-5.png" 
-								alt=""
-								class="c-thumbs-slider__img">
-						</figure>
-						<span class="c-thumbs-slider__title">
-							Взрыв на Позняках в Киеве
-						</span>
-					</div>
-					<div class="swiper-slide c-thumbs-slider__slide">
-						<figure class="c-thumbs-slider__figure">
-							<img 
-								src="grafical/images/new-5.png" 
-								alt=""
-								class="c-thumbs-slider__img">
-						</figure>
-						<span class="c-thumbs-slider__title">
-							Потоп на западной Украине
-						</span>
-					</div>
-					<div class="swiper-slide c-thumbs-slider__slide">
-						<figure class="c-thumbs-slider__figure">
-							<img 
-								src="grafical/images/new-5.png" 
-								alt=""
-								class="c-thumbs-slider__img">
-						</figure>
-						<span class="c-thumbs-slider__title">
-							Цифровая трансформация бизнеса Украины
-						</span>
-					</div>
+				<div class="swiper-wrapper c-thumbs-slider__wrapper">
+					@php
+						$thumbs = [
+							1 => 'Леди в законе. Особый статус для жены президетна',
+							2 => 'Взрыв на Позняках в Киеве',
+							3 => 'Потоп на западной Украине',
+							4 =>'Цифровая трансформация бизнеса Украины'
+							]
+					@endphp
+					@for($i = 1; $i <= 4; $i++)
+						<div class="swiper-slide c-thumbs-slider__slide">
+							<figure class="c-thumbs-slider__figure">
+								<img 
+									src="grafical/icons/no-img.svg"
+									alt="thumbs"
+									width="250"
+									height="40"
+									srcset="
+										grafical/images/resize-50/thumbs-{{ $i }}.webp 768w,
+										grafical/images/resize-75/thumbs-{{ $i }}.webp 1200w,
+										grafical/images/resize-90/thumbs-{{ $i }}.webp 1560w,"
+									class="c-thumbs-slider__img"
+									decoding="async">
+							</figure>
+							<span class="c-thumbs-slider__title">
+								{{ $thumbs[$i] }}
+							</span>
+						</div>
+					@endfor
 				</div>
 		</div>
 		<div class="swiper js--basic-slider c-basic-slider__basic c-basic-slider">
 			<div class="swiper-wrapper">
-				@for($i = 0; $i < 4; $i++)
+				@for($i = 1; $i <= 4; $i++)
 					<div class="swiper-slide c-basic-slider__slide">
 						<div class="c-basic-slider__box">
-							<figure class="c-basic-slider__figure">
-								<img 
-									src="grafical/images/new-5.png" 
-									alt=""
-									class="c-basic-slider__img">
-							</figure>
+							<picture class="c-basic-slider__picture">
+								@if($i == 1)
+									<source srcset="grafical/images/resize-90/slider-{{ $i }}.webp" media="(min-width: 992px)">
+									<source srcset="grafical/images/resize-75/slider-{{ $i }}.webp" media="(min-width: 768px)">
+									<source srcset="grafical/images/resize-50/slider-{{ $i }}.webp" media="(min-width: 320px)">
+									<img 
+										src="grafical/images/resize-50/slider-{{ $i }}.webp"
+										width="310"
+										header="250"
+										alt="slider"
+										decoding="async"
+										class="c-basic-slider__img">
+								@else
+									<source data-srcset="grafical/images/resize-90/slider-{{ $i }}.webp" media="(min-width: 992px)">
+									<source data-srcset="grafical/images/resize-75/slider-{{ $i }}.webp" media="(min-width: 768px)">
+									<source data-srcset="grafical/images/resize-50/slider-{{ $i }}.webp" media="(min-width: 320px)">
+									<img 
+										data-src="grafical/icons/no-img.svg"
+										width="310"
+										header="250"
+										alt="slider"
+										decoding="async"
+										class="c-basic-slider__img swiper-lazy">
+								@endif
+							</picture>
 							<div class="c-basic-slider__inner">
 								@include('components.link-category', [
 									'class' => 'c-basic-slider__link-category c-link-category--white',

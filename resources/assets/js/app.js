@@ -1,3 +1,4 @@
 require('./layout/index');
 
-require('./components/slider');
+// require('./components/slider');
+import('./components/slider' /*  webpackChunkName: 'sliders' */);

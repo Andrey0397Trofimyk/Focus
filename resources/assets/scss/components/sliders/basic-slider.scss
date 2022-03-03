@@ -12,6 +12,8 @@
         align-items: center;
         justify-content: center;
         height: 60px;
+        width: fit-content;
+        margin-right: 10px;
         cursor: pointer;
         &.swiper-slide-thumb-active {
             &:before {
@@ -37,7 +39,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(76.81deg, #000000 14.51%, rgba(0, 0, 0, 0) 74.23%);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
             z-index: 2;
         }
     }
@@ -46,12 +48,12 @@
         top: 0;
         left: 0;
         object-fit: cover;
-        object-position: 0 20%;
+        object-position: center;
         z-index: 1;
     }
     &__title {
         position: relative;
-        width: calc(100% - 20px);
+        width: 260px;
         color: #fff;
         font-size: rem(14);
         font-weight: 700;
@@ -71,8 +73,9 @@
   }
 
 .c-basic-slider {
-    &__figure {
+    &__picture {
         position: relative;
+        display: block;
         padding-bottom: 130%;
         background-color: #000;
         &:before {
@@ -138,7 +141,7 @@
 
 @include min(380px) {
     .c-basic-slider {
-        &__figure {
+        &__picture {
             padding-bottom: 100%;
         }
     } 
@@ -146,7 +149,7 @@
 
 @include min(480px) {
     .c-basic-slider {
-        &__figure {
+        &__picture {
             padding-bottom: 78%;
             &:before {
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 32%, rgba(0, 0, 0, 0.4) 41%, #000000 70.64%);
@@ -159,7 +162,24 @@
     }
 }
 
+@include min(576px) {
+    .c-thumbs-slider {
+        &__slide {
+            margin-right: 20px;
+        }
+    }
+}
+
 @include min(768px) {
+    .c-thumbs-slider {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__title {
+            width: 220px;
+        }
+    }
     .c-basic-slider {
         &__title {
             font-size: rem(32);
@@ -168,8 +188,16 @@
 }
 
 @include min(992px) {
+    .c-thumbs-slider {
+        &__slide {
+            margin-right: 25px;
+        }
+        &__title {
+            width: 206.25px;
+        }
+    }
     .c-basic-slider {
-        &__figure {
+        &__picture {
             padding-bottom: 52%;
             &:before {
                 background: linear-gradient(76.81deg, #000000 14.51%, rgba(0, 0, 0, 0) 74.23%);
@@ -204,7 +232,7 @@
         &__link-category {
             margin-bottom: 25px;
         }
-        &__figure {
+        &__picture {
             height: 466px;
             padding-bottom: 0;
         }
@@ -215,6 +243,14 @@
         &__text {
             max-width: 530px;
             font-size: rem(20);
+        }
+    }
+}
+
+@include min(1300px) {
+    .c-thumbs-slider {
+        &__title {
+            width: 291.25px;
         }
     }
 }

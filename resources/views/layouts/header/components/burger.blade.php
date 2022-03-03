@@ -1,14 +1,14 @@
 <div class="{{ $class ?? '' }} c-burger">
     <button 
         type="button"
-        class="c-burger__button js--toggle-menu" data-content="c-burger-menu"
+        class="c-burger__button js--toggle-menu" data-content="js--toggle-burger"
         >
         <span class="c-burger__line"></span>
     </button>
     @include('components.logo', [
         'class' => 'c-burger__logo' 
     ])
-    <div class="c-burger__menu c-burger-menu">
+    <div class="c-burger__menu c-burger-menu js--toggle-burger">
         @php
             $menuList = [    
                 'Категории',
@@ -53,15 +53,19 @@
                 </ul>
             </div>
             <a href="#" class="c-burger-menu__advertising">
-                <picture class="c-burger-menu__picture">
-                    <img 
-                        src="grafical/images/blurb-4.png" 
+                <figure class="c-burger-menu__picture">
+                    <img  
+                        src="grafical/icons/no-img.svg"
+                        data-srcset="
+                            grafical/images/resize-50/blurb-4.webp 1x,
+                            grafical/images/resize-75/blurb-4.webp 2x,
+                            grafical/images/resize-90/blurb-4.webp 3x"
                         alt="advertising"
                         width="85"
                         height="110"
                         decoding="async"
-                        class="c-burger-menu__img">
-                </picture>
+                        class="c-burger-menu__img lazyload">
+                </figure>
                 <span class="c-burger-menu__text">
                     Гарантировано получите скидку
                     <span>-10%</span>

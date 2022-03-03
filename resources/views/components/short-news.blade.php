@@ -1,9 +1,9 @@
 <div class="{{ $class ?? '' }} c-short-news">
     <div class="c-short-news__container container">
         <div class="c-short-news__inner">
-            <h2 class="c-short-news__title">
+            <a href="#" class="c-short-news__title">
                 Потоп на западной Украине
-            </h2>
+            </a>
             <ul class="c-short-news__list">
                 @for($i = 0; $i < 5; $i++)
                     @if($i == 0)
@@ -37,9 +37,16 @@
             </a>
             <div class="c-short-news__figure">
                 <img 
-                    src="grafical/images/new-6.png" 
-                    alt="" 
-                    class="c-short-news__img">
+                    src="grafical/icons/no-img.svg"
+                    data-srcset="
+                        grafical/images/resize-50/new-6.webp 576w,
+                        grafical/images/resize-75/new-6.webp 1200w,
+                        grafical/images/resize-90/new-6.webp 1560w,"
+                    alt="news"
+                    width="320"
+                    height="350"
+                    decoding="async" 
+                    class="c-short-news__img lazyload">
             </div>
         </div>
     </div>

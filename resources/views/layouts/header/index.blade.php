@@ -4,8 +4,8 @@
             'class' => 'header__burger'
         ])
         <div class="header__langs">
-            <a href="" class="header__lang header__lang--ru">ru</a>
-            <a href="" class="header__lang header__lang--ua active">ua</a>
+            <a href="" class="header__lang header__lang--ru js--languages">ru</a>
+            <a href="" class="header__lang header__lang--ua js--languages active">ua</a>
         </div>
         @include('layouts.header.components.search', [
             'class' => 'header__search'

@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    @include('common.critical-css')
+
+    @include('common.links')
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus</title>
-
-    <link rel="prefetch" href="{{ mix('/fonts/CeraPro-Medium.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="prefetch" href="{{ mix('/fonts/CeraPro-Bold.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="prefetch" href="{{ mix('/fonts/CeraPro-Regular.woff2') }}" as="font" type="font/woff2" crossorigin>
-
-    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <link rel="icon" href="grafical/icons/favicon.svg">
+    <title>Новости за сегодня | Последние новости дня | Фокус — больше чем просто новости</title>
 </head>
 <body>
+    
     @include('layouts.header.index')
+    
     <main class="main">
+
         @include('components.sliders.basic-slider', [
             'class' => 'main__basic-slider'    
         ])
         @include('components.list-news',[
             'newsList' => $newsListFirst,
-            'class' => 'main__list-news-first'
+            'class' => 'main__list-news-first',
+            'specialContainer' => true
         ])
         @include('components.short-news', [
             'class' => 'main__short-news'    
-        ])
-        @include('components.blurb.blurb-first', [
-            'class' => 'main__blurb-first'    
         ])
         @include('components.list-news',[
             'newsList' => $newsListSecond,
             'class' => 'main__list-news-second'
         ])
-        @include('components.list-news',[
-            'newsList' => $newsListFourth,
-            'class' => 'main__list-news-fourth',
-            'title' => 'Украина'
+        @include('components.blurb.blurb-first', [
+            'class' => 'main__blurb-first'    
         ])
         @include('components.sliders.rating',[
             'newsList' => $newsRating,
             'class' => 'main__rating'
+        ])
+        @include('components.list-news',[
+            'newsList' => $newsListFourth,
+            'class' => 'main__list-news-fourth',
+            'title' => 'Украина'
         ])
         @include('components.sliders.now-popular',[
             'class' => 'main__now-popular'
@@ -61,7 +65,9 @@
         ])
 
     </main>
+
     @include('layouts.footer.index')
-    <script src="{{ mix('/js/app.js') }}"></script>
+    
+    @include('common.scripts')
 </body>
 </html>

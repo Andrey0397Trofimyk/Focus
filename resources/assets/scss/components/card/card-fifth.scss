@@ -1,0 +1,17 @@
+.c-card-fifth {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    margin-bottom: auto;
+    &__link-category {
+        display: inline-block;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+}
+
+@include min(480px) {
+    .c-card-fifth {
+        height: 100%;
+    }
+}

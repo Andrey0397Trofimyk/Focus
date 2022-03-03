@@ -4,12 +4,19 @@
 			<div class="swiper-wrapper">
 				@for($i = 0; $i < 2; $i++)
 					<div class="swiper-slide c-news-slider__slide">
-						<div class="c-news-slider__box">
+						<article class="c-news-slider__box">
 							<figure class="c-news-slider__figure">
 								<img 
-									src="grafical/images/blurb-9.png" 
-									alt=""
-									class="c-news-slider__img">
+									src="grafical/icons/no-img.svg"
+									data-srcset="
+										grafical/images/resize-50/blurb-9.webp 576w,
+										grafical/images/resize-75/blurb-9.webp 1200w,
+										grafical/images/resize-90/blurb-9.webp 1560w," 
+									alt="blurb"
+									width="320"
+									height="400"
+									decoding="async"
+									class="c-news-slider__img lazyload">
 							</figure>
 							@include('components.link-category', [
 								'class' => 'c-news-slider__link-category c-link-category--white',
@@ -25,7 +32,7 @@
 									Почему украинки участвуют в боях без правил
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 				@endfor
 			</div>

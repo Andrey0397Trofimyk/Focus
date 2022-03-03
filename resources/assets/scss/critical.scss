@@ -1,0 +1,11 @@
+@import 'base/mix.scss';
+
+@import 'layouts/header/index.scss';
+@import 'layouts/footer/index.scss';
+
+@import '~swiper/scss';
+@import '~swiper/scss/thumbs';
+@import '~swiper/scss/autoplay';
+@import '~swiper/scss/navigation';
+@import '~swiper/scss/lazy';
+@import '~swiper/scss/effect-fade';

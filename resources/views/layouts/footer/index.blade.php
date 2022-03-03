@@ -39,12 +39,16 @@
                                 <a href="#" class="c-adv__link">
                                     <figure class="c-adv__figure">
                                         <img 
-                                            src="grafical/images/blurb-4.png" 
+                                            src="grafical/icons/no-img.svg" 
+                                            data-srcset="
+                                                grafical/images/resize-50/blurb-4.webp 1x,
+                                                grafical/images/resize-75/blurb-4.webp 2x,
+                                                grafical/images/resize-90/blurb-4.webp 3x"
                                             alt="advert"
                                             width="85"
                                             height="110"
                                             decoding="async"
-                                            class="c-adv__img">
+                                            class="c-adv__img lazyload">
                                     </figure>
                                 </a>
                             </li>
@@ -52,11 +56,9 @@
                     </ul>
                     <div class="c-adv__inner">
                         <span class="c-adv__share">Гарантировано получите скидку <span>-10%</span></span>
-                        <a
-                            href="#"
-                            class="c-adv__button-link">
-                            Подписаться
-                        </a>
+                        @include('components.button', [
+                            'class' => 'c-adv__button-link'    
+                        ])
                     </div>
                 </div>
             </div>

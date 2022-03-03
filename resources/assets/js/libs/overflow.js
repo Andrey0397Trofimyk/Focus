@@ -1,5 +1,4 @@
 export const overflow = (isScrollbar = true) => {
-    console.log(isScrollbar);
     if (!isScrollbar) {
         setTimeout(() => {
             document.documentElement.classList.remove('fixing');

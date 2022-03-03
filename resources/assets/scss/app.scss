@@ -3,14 +3,6 @@
 @import 'base/fonts.scss';
 @import 'base/grid.scss';
 
-@import '~swiper/scss';
-@import '~swiper/scss/thumbs';
-@import '~swiper/scss/autoplay';
-@import '~swiper/scss/navigation';
-
-@import 'layouts/header/index.scss';
-@import 'layouts/footer/index.scss';
-
 @import 'components/logo.scss';
 @import 'components/list-news.scss';
 @import 'components/time.scss';
@@ -30,17 +22,21 @@
     &__basic-slider {
         margin-bottom: 30px;
     }
-    &__list-news-first {
-        margin-bottom: 20px;
+    &__list-news-first, &__list-news-fifth {
+        margin-bottom: 35px;
     }
-    &__short-news {
-        margin-bottom: 30px;
-    }
-    &__rating {
-        margin-bottom: 30px;
-    }
+    &__list-news-second, 
+    &__list-news-third, 
+    &__list-news-fourth, 
+    &__list-news-fifth, 
+    &__blurb-first, 
+    &__rating, 
     &__now-popular {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+    }
+    &__short-news, 
+    &__news-slider {
+        margin-bottom: 45px;
     }
 }
 
@@ -53,14 +49,21 @@
         &__basic-slider {
             margin-bottom: 40px;
         }
-        &__list-news-first {
+        &__list-news-first, &__list-news-fifth {
             margin-bottom: 45px;
         }
-        &__short-news {
-            margin-bottom: 50px;
-        }
+        &__list-news-second, 
+        &__list-news-third, 
+        &__list-news-fourth, 
+        &__list-news-fifth, 
+        &__blurb-first, 
+        &__rating, 
         &__now-popular {
             margin-bottom: 50px;
+        }
+        &__short-news, 
+        &__news-slider {
+            margin-bottom: 55px;
         }
     }
 }

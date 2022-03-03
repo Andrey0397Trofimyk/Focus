@@ -1,1 +1,7 @@
-require('./components/burger');
+require('lazysizes');
+
+require('./dropdown');
+
+require('./language');
+
+require('./search');

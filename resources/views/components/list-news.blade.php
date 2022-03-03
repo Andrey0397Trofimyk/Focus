@@ -1,5 +1,5 @@
 <div class="{{ $class ?? '' }}  c-list-news">
-    <div class="c-list-news__container container">
+    <div class="c-list-news__container container container--wrap">
         <h2 class="c-list-news__title ui-title">
             {{ $title ?? '' }}
         </h2>

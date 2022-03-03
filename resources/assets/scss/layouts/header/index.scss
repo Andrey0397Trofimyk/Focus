@@ -2,6 +2,10 @@
 @import 'components/search.scss';
 
 .header { 
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 12;
     &__container {
         display: flex;
         align-items: center;

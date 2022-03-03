@@ -42,11 +42,15 @@
 @include min(540px) {
     .c-adv {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         gap: 20px;
         &__button-link {
             max-width: 180px;
             margin-top: 20px;
+        }
+        &__share {
+            display: block;
+            max-width: 200px;
         }
     }
 }
@@ -55,6 +59,9 @@
     .c-adv {
         &__share, &__button-link {
             font-size: 1.6rem;
+        }
+        &__button-link {
+            max-width: 210px;
         }
         &__list {
             margin-bottom: 0;
