@@ -36,8 +36,12 @@
 					</div>
 				@endfor
 			</div>
-			<div class="c-news-slider__arrow  ui-slider-arrow ui-slider-arrow--inside ui-slider-arrow__arrow--next js--new-slider-next"></div>
-			<div class="c-news-slider__arrow  ui-slider-arrow ui-slider-arrow--inside ui-slider-arrow__arrow--prev js--new-slider-prev"></div>
+			<div class="c-news-slider__arrow  ui-slider-arrow ui-slider-arrow--inside ui-slider-arrow--next js--new-slider-next">
+				<span class="ui-slider-arrow__line"></span>
+			</div>
+			<div class="c-news-slider__arrow  ui-slider-arrow ui-slider-arrow--inside ui-slider-arrow--prev js--new-slider-prev">
+				<span class="ui-slider-arrow__line"></span>
+			</div>
 		</div>
 	</div>
 </div>

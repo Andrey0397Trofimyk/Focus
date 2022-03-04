@@ -75,9 +75,13 @@
         z-index: 2;
     }
     &__job {
+        position: relative;
         font-size: rem(10);
         font-weight: 500;
-        opacity: 0.75;
+        z-index: 2;
+        span, a {
+            opacity: 0.75;
+        }
     }
 }
 
@@ -150,6 +154,16 @@
             left: 30%;
             font-size: 300px;
             line-height: 0.58;
+        }
+    }
+    .c-person {
+        &__job {
+            a {
+                transition-duration: 0.3s;
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 }

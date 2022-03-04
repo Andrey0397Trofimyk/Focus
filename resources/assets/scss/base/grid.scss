@@ -41,3 +41,11 @@
         }
     }
 }
+
+@include min(1440px) {
+    .container {
+        &--fluid {
+            max-width: 1440px;
+        }
+    }
+}

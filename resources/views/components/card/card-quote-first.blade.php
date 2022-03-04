@@ -30,9 +30,9 @@
             <svg class="c-card-quote-first__icon">
         <use xlink:href="{{ mix('/grafical/icons/sprite.svg') }}#symbol"></use>
             </svg>
-            <span class="c-card-quote-first__text">
+            <blockquote class="c-card-quote-first__text">
                 {{ $news['text'] ?? '' }} 
-            </span>
+            </blockquote>
         </a>
         <a href="" class="c-card-quote-first__author c-author">
             <figure class="c-author__figure @if(!isset($news['c-author-img'])) c-author__figure--no-img @endif">

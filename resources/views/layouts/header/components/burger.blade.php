@@ -4,6 +4,8 @@
         class="c-burger__button js--toggle-menu" data-content="js--toggle-burger"
         >
         <span class="c-burger__line"></span>
+        <span class="c-burger__line c-burger__line--center"></span>
+        <span class="c-burger__line"></span>
     </button>
     @include('components.logo', [
         'class' => 'c-burger__logo' 

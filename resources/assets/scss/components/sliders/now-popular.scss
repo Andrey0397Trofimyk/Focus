@@ -12,6 +12,9 @@
     &__title {
         margin-bottom: 15px;
     }
+    &__inner {
+        position: relative;
+    }
 }
 
 @include min(480px) {
