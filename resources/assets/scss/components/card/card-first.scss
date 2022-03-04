@@ -26,10 +26,21 @@
     .c-card-first {
         &__box {
             padding-bottom: 80%;
+            overflow: hidden;
         }
         &__link-category {
             bottom: 15px;
             left: 10px;
+        }
+        &__img {
+            transition-duration: 0.8s;
+        }
+        &__link-img {
+            &:hover {
+                img {
+                    transform: scale(1.3);
+                }
+            }
         }
     }
 }

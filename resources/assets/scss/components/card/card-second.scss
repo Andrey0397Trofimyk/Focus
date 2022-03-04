@@ -97,6 +97,20 @@
     }
 }
 
+@include min(992px) {
+    .c-card-second {
+        overflow: hidden;
+        &__img {
+            transition-duration: 0.8s;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
 @include min(1200px) {
     .c-card-second {
         &__link-category {

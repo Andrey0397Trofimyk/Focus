@@ -48,6 +48,19 @@
         &__figure {
             padding-bottom: 60%;
         }
+        &__link-img {
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &__inner {
+            overflow: hidden;
+        }
+        &__img {
+            transition-duration: 0.8s;
+        }
     }
 }
 

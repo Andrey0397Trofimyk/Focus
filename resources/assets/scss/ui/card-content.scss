@@ -37,6 +37,10 @@
         margin-top: auto;
         padding-top: 10px;
     }
+    &__link-category {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 @include min(576px) {

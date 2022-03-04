@@ -17,7 +17,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-11.webp',
                 'category' => 'Технологии и наука',
                 'text' => 'Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье',
             ],
@@ -31,14 +31,14 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
-                'category' => 'Технологии и наука',
+                'img' => 'new-13.webp',
+                'category' => 'Политика',
                 'text' => 'Дубы и сосны. В соцсетях обсуждают сексистский скандал в "Слуге народа"',
             ],
             [
                 'type-card' => 'card-second',
                 'img' => 'new-3.webp',
-                'category' => 'рейтинг',
+                'category' => 'Технологии и наука',
                 'text' => 'Заговоренная связь. Все, что известно о 5G и его влиянии на здоровье',
             ],
             [
@@ -49,14 +49,14 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-fourth',
-                'img' => 'new-4.webp',
-                'category' => 'политика',
-                'text' => 'Кабмин назначил главой МОН Сергея Шкарлета в обход Рады',
+                'img' => 'new-14.webp',
+                'category' => 'Технологии и наука',
+                'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
             ],
             [
                 'type-card' => 'card-second',
-                'img' => 'new-3.webp',
-                'category' => 'рейтинг',
+                'img' => 'new-15.webp',
+                'category' => 'Политика',
                 'text' => 'Выход в люди. Как Шарий диктует информационную повестку дня в Украине',
             ]
         ];
@@ -70,20 +70,20 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-15.webp',
                 'category' => 'Технологии и наука',
-                'text' => 'Агент изменений. Денис Малюська — о частных СИЗО, продаже тюрем и будущем люстрации',
+                'text' => 'Счастье за 16 секунд. В чем секрет популярности TikTok и как соцсеть влияет на психику подростков',
             ],
             [
                 'type-card' => 'card-quote-first',
                 'category' => 'Мнение',
-                'text' => '“Государство или смерть. Какой кризис станет для Украины последним”',
+                'text' => '“Too much против me too. Почему сексистские скандалы в Украине ничем не заканчиваются”',
                 'author-img' => 'author-1.webp',
                 'author' => 'Михаил Багинский'
             ],
             [
                 'type-card' => 'card-fourth',
-                'img' => 'new-4.webp',
+                'img' => 'new-16.webp',
                 'category' => 'Технологии и наука',
                 'text' => 'Новая нефть. Как ученые ищут редкие элементы на дне океана, в космосе и мусоре',
             ],
@@ -98,7 +98,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-fourth',
-                'img' => 'new-4.webp',
+                'img' => 'new-17.webp',
                 'category' => 'Культура',
                 'text' => 'Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе',
             ],
@@ -106,13 +106,13 @@ class NewsController extends Controller
         $newsListThird = [
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-23.webp',
                 'category' => 'Украина',
                 'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-24.webp',
                 'category' => 'Украина',
                 'text' => 'Небоскребы советских времен. Три маршрута к памятникам советского модернизма в Киеве',
             ],
@@ -126,7 +126,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-25.webp',
                 'category' => 'Украина',
                 'text' => 'Как закалилась сталь. Музей Островского в Шепетовке — памятник архитектуры, а не идеологии',
             ],
@@ -134,15 +134,15 @@ class NewsController extends Controller
         $newsListFourth = [
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-18.webp',
                 'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'text' => 'Проверка доверия: владелец «Три Н» Максим Криппа о махинациях в благотворительности',
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-19.webp',
                 'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'text' => 'Выход из карантина: Кабмин разрешил открыть кинотеатры со 2 июля',
             ],
             [
                 'type-card' => 'card-second',
@@ -153,9 +153,10 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-20.webp',
                 'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'text' => 'Пора домой. Истории мигрантов, которые вернулись в Украину из 
+                ОАЭ, Китая и Польши',
             ],
             [
                 'type-card' => 'card-quote-first',
@@ -166,22 +167,22 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-21.webp',
                 'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'text' => 'Бетонная пята. Как застройщики превращают украинские города в ад',
             ],
             [
                 'type-card' => 'card-first',
-                'img' => 'new-1.webp',
+                'img' => 'new-22.webp',
                 'category' => 'Украина',
-                'text' => 'Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом',
+                'text' => 'Смерть марафонца. Можно ли было спасти Екатерину Катющеву',
             ],
         ];
         $newsListFifth = [
             [
                 'type-card' => 'card-fourth',
-                'img' => 'new-1.webp',
-                'category' => 'Украина',
+                'img' => 'new-26.webp',
+                'category' => 'спорт',
                 'text' => 'Финал Кубка Украины по футболу перенесут из Львова в Харьков, – СМИ',
             ],
             [
@@ -192,7 +193,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-fourth',
-                'img' => 'new-3.webp',
+                'img' => 'new-17.webp',
                 'category' => 'Культура',
                 'text' => 'Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе',
             ],
@@ -202,7 +203,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-fourth',
-                'img' => 'new-3.webp',
+                'img' => 'new-27.webp',
                 'category' => 'авто',
                 'text' => 'Вдохновленные ностальгией. 3 лимитированные серии автомобилей, посвященные славному прошлому',
             ],
@@ -212,7 +213,7 @@ class NewsController extends Controller
             ],
             [
                 'type-card' => 'card-second',
-                'img' => 'new-1.webp',
+                'img' => 'new-28.webp',
                 'category' => 'Длинный фокус',
                 'text' => 'КОГДА ТЫ ДОМА: как «умный дом» LG приходит на выручку во времена турбулентности',
             ],

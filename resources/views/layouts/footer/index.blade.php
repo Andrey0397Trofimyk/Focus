@@ -34,16 +34,22 @@
                 </ul>
                 <div class="footer__adv c-adv">
                     <ul class="c-adv__list">
-                        @for($i = 0; $i < 3; $i++)
+                        @php
+                            $blurbFooter = [
+                                0 => 1, 
+                                1 => 2, 
+                                2 => 4];
+                        @endphp
+                        @foreach($blurbFooter as $blurb)
                             <li class="c-adv__item">
                                 <a href="#" class="c-adv__link">
                                     <figure class="c-adv__figure">
                                         <img 
                                             src="grafical/icons/no-img.svg" 
                                             data-srcset="
-                                                grafical/images/resize-50/blurb-4.webp 1x,
-                                                grafical/images/resize-75/blurb-4.webp 2x,
-                                                grafical/images/resize-90/blurb-4.webp 3x"
+                                                grafical/images/resize-50/blurb-{{ $blurb }}.webp 1x,
+                                                grafical/images/resize-75/blurb-{{ $blurb }}.webp 2x,
+                                                grafical/images/resize-90/blurb-{{ $blurb }}.webp 3x"
                                             alt="advert"
                                             width="85"
                                             height="110"
@@ -52,7 +58,7 @@
                                     </figure>
                                 </a>
                             </li>
-                        @endfor
+                        @endforeach
                     </ul>
                     <div class="c-adv__inner">
                         <span class="c-adv__share">Гарантировано получите скидку <span>-10%</span></span>

@@ -68,12 +68,24 @@
         &__figure {
             height: 100%;
             padding-top: 0;
+            &:before {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.41) -16.04%, #000000 56.64%);
+            }
         }
     }
 }
 
 @include min(992px) {
     .c-card-third {
+        overflow: hidden;
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+        &__img {
+            transition-duration: 0.8s;
+        }
         &__special-text {
             font-size: rem(90);
         }
@@ -82,6 +94,11 @@
         }
         &__link-category {
             top: 10px;
+        }
+        &__figure {
+            &:before {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.41) 9.96%, #000000 43.64%);
+            }
         }
     }
 }
