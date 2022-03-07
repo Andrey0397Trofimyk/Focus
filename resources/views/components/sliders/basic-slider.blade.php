@@ -43,7 +43,7 @@
 									<source srcset="grafical/images/resize-75/slider-{{ $i }}.webp" media="(min-width: 768px)">
 									<source srcset="grafical/images/resize-50/slider-{{ $i }}.webp" media="(min-width: 320px)">
 									<img 
-										src="grafical/images/resize-50/slider-{{ $i }}.webp"
+										src="grafical/icons/no-img.svg"
 										width="310"
 										header="250"
 										alt="slider"
@@ -70,9 +70,15 @@
 								<a 
 									href=""
 									class="c-basic-slider__link">
-									<h1 class="c-basic-slider__title">
-										Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента
-									</h1>
+									@if($i == 1)
+										<h1 class="c-basic-slider__title">
+											Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента
+										</h1>
+									@else
+										<h2 class="c-basic-slider__title">
+											Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента
+										</h2>
+									@endif
 									<span class="c-basic-slider__text">
 										Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине 
 									</span>

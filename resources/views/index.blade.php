@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     @include('common.critical-css')
-
+    
     @include('common.links')
 
     <meta charset="UTF-8">
