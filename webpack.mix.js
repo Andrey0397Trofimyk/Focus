@@ -107,7 +107,7 @@ mix.browserSync({
     host: process.env.APP_URL,
     open: 'external', 
 });
-
+mix.options({ processCssUrls: false })
 mix.version([
     './public/grafical/icons/sprite.svg'
 ]);
