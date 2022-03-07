@@ -39,9 +39,9 @@
 						<div class="c-basic-slider__box">
 							<picture class="c-basic-slider__picture">
 								@if($i == 1)
-									<source srcset="grafical/images/resize-90/slider-{{ $i }}.webp" media="(min-width: 992px)">
-									<source srcset="grafical/images/resize-75/slider-{{ $i }}.webp" media="(min-width: 768px)">
-									<source srcset="grafical/images/resize-50/slider-{{ $i }}.webp" media="(min-width: 320px)">
+									<source srcset="grafical/images/resize-90/slider-{{ $i }}.webp" media="(min-width: 992px)" type="image/webp">
+									<source srcset="grafical/images/resize-75/slider-{{ $i }}.webp" media="(min-width: 768px)" type="image/webp">
+									<source srcset="grafical/images/resize-50/slider-{{ $i }}.webp" media="(min-width: 320px)" type="image/webp">
 									<img 
 										src="grafical/icons/no-img.svg"
 										width="310"
